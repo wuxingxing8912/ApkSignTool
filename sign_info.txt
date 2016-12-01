@@ -1,0 +1,24 @@
+[
+	{
+		"type":"奇虎360",
+		"targetApk":"qihu360_signed",
+		"keystoreName":"my.keystore",
+		"keystorePassword":"123456",
+		"keystoreAlias":"mykeystore",
+		"replace":[
+			{"android:name":"channel","android:value":"qihu360"},
+			{"android:name":"loginsdkname","android:value":"kf_qihu360"}
+		]
+	},
+	{
+		"type":"豌豆荚",
+		"targetApk":"wandoujia_signed",
+		"keystoreName":"my.keystore",
+		"keystorePassword":"123456",
+		"keystoreAlias":"mykeystore",
+		"replace":[
+			{"android:name":"channel","android:value":"wandoujia"},
+			{"android:name":"loginsdkname","android:value":"kf_wandoujia"}
+		]
+	}
+]

@@ -1,0 +1,3 @@
+#!/bin/bash
+cd `dirname $0`
+python sign.py sign_info.txt
