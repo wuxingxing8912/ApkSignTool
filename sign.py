@@ -19,6 +19,17 @@ print("===log===当前时间: %s" % curtime)
 # 解包后的文件夹路径
 unsignedFilesPath = "%s/unsigned" % curpath
 
+# 判断out文件夹和log文件夹是否存在，不存在则创建
+outFileIsExist = os.path.exists('%s/unsigned' % curpath)
+if not outFileIsExist:
+	# 创建文件夹
+	os.mkdir('%s/out' % curpath)
+
+logFileIsExist = os.path.exists('%s/log' % curpath)
+if not logFileIsExist:
+	# 创建文件交
+	os.mkdir('%s/log' % curpath)
+
 # 日志文件
 logFile = open('log/sign_log%s.txt' % curtime,'w')
 errorFile = open('log/error_log.txt%s' % curtime,'w')

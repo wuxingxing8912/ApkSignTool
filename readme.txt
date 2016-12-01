@@ -6,7 +6,8 @@ sign_start：Mac下签名执行程序，双击执行
 sign_start.bat：Window下签名执行程序，双击执行
 unsigned.apk：待签名的apk
 my.keystore：签名文件
-out文件夹：签名好的apk存放目录
+out文件夹（程序执行后创建）：签名好的apk存放目录
+log文件夹（程序执行后创建）：日志文件存放目录
 
 二、使用前准备工作
 1、检查环境
