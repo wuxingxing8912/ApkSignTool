@@ -1,4 +1,4 @@
-# AndroidSignTool
+# ApkSignTool
 
 ## 使用方法详见readme.txt
 
