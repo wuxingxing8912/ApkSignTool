@@ -1,7 +1,7 @@
 # 安卓批量签名工具使用说明
 
 ## 安卓批量签名工具使用Python编写，利用此工具对未签名apk实现修改AndroidManifest.xml的多个meta-data信息，并自动签名（可实现多个签名）
-## 如果只需要进行多渠道打包，可参考：https://github.com/skynewborn/android-multichannel-packaging-tool
+## 如果只需要进行多渠道打包，可参考：[Android多渠道打包工具][1]
 
 ## 一、目录及使用说明
 ### sign_start：Mac下签名执行程序，双击执行
@@ -45,3 +45,5 @@ android:value：需要替换的内容
 3、有任何问题请联系我（QQ：610864358）
 
 ## 有任何问题请联系QQ：610864358
+
+[1]: https://github.com/skynewborn/android-multichannel-packaging-tool
