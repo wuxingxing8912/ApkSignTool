@@ -6,7 +6,6 @@ import sys
 import simplejson as json
 import time
 import shutil
-import platform
 
 curpath = sys.path[0]
 print("===log===当前路径: %s" % curpath)
@@ -20,7 +19,7 @@ print("===log===当前时间: %s" % curtime)
 unsignedFilesPath = "%s/unsigned" % curpath
 
 # 判断out文件夹和log文件夹是否存在，不存在则创建
-outFileIsExist = os.path.exists('%s/unsigned' % curpath)
+outFileIsExist = os.path.exists('%s/out' % curpath)
 if not outFileIsExist:
 	# 创建文件夹
 	os.mkdir('%s/out' % curpath)
@@ -44,7 +43,7 @@ if fileIsExist:
 # 1，反编译
 apktoolDStartLog = '===log===正在反编译……'
 print(apktoolDStartLog)
-logFile.write(apktoolDStartLog + '\n')
+logFile.write(apktoolDStartLog)
 r = os.system('apktool d %s/unsigned.apk -o %s/unsigned' % (curpath,curpath))
 apktoolDEndLog = '===log===反编译结果：%s' % r
 print(apktoolDEndLog)
@@ -77,7 +76,7 @@ def signTask(signInfo):
 	androidManifest.close()
 
 	# 3, 回编译
-	apktoolBStartLog = '===log===正在回编译……'
+	apktoolBStartLog = '===log===正在回编译……\n'
 	print(apktoolBStartLog)
 	logFile.write(apktoolBStartLog + '\n')
 	r2 = os.system('apktool b %s/unsigned' % curpath)
@@ -115,7 +114,7 @@ if r == 0:
 
 		# 调用签名方法
 		signResult = signTask(signInfo)
-		print('===log===打包结果：%s' % signResult)
+
 		if signResult == 0:
 			signResultLog = '\n================%s.apk================已打包好!\n' % signInfo["targetApk"]
 			print(signResultLog)
