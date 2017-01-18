@@ -35,10 +35,6 @@ replace：替换的内容集合（注：目前只支持替换AndroidManifest.xml
 android:name：需要替换的名称(用于查找，名称本身不被替换)
 android:value：需要替换的内容
 
-4、将待签名的apk重命名为unsigned.apk，替换当前目录下的同名文件
-
-5、将签名文件重命名为my.keystore，替换当前目录下的同名文件
-
 ## 三、注意事项：
 ### 1、Windows请AndroidSignTool放在D盘根目录下！
 2、建议使用jdk1.7，jdk1.6可能出现无法签名的情况
