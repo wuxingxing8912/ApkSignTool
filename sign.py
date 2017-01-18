@@ -43,7 +43,7 @@ if fileIsExist:
 # 1，反编译
 apktoolDStartLog = '===log===正在反编译……'
 print(apktoolDStartLog)
-logFile.write(apktoolDStartLog)
+logFile.write(apktoolDStartLog + '\n')
 r = os.system('apktool d %s/unsigned.apk -o %s/unsigned' % (curpath,curpath))
 apktoolDEndLog = '===log===反编译结果：%s' % r
 print(apktoolDEndLog)
