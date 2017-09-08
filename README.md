@@ -15,7 +15,7 @@ log文件夹（程序执行后创建）：日志文件存放目录
 ### 1、检查环境
 (1),python环境检查：Windows/Mac：cmd/终端下输入python，如果有输出版本号，则说明已安装，推荐版本python2.7  
 下载地址：https://www.python.org/downloads/release/python-2712/  
-（2），jdk环境检查：Windows/Mac：cmd/终端下输入python，如果有输出版本号，则说明已安装，推荐版本1.7  
+（2），jdk环境检查：Windows/Mac：cmd/终端下输入java -version，如果有输出版本号，则说明已安装，推荐版本1.7  
 下载地址：http://www.oracle.com/technetwork/java/javase/downloads/jdk7-downloads-1880260.html  
 
 2、安装Simplejson  
