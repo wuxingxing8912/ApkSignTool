@@ -36,7 +36,7 @@ android:name：需要替换的名称(用于查找，名称本身不被替换)
 android:value：需要替换的内容
 
 ## 三、注意事项：
-### 1、Windows请AndroidSignTool放在D盘根目录下！
+### 1、Windows请将AndroidSignTool放在D盘根目录下！
 2、建议使用jdk1.7，jdk1.6可能出现无法签名的情况
 
 ## 有任何问题请在简书留言：[http://www.jianshu.com/p/b1b549010404][2]
